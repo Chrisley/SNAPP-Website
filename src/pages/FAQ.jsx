@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { Collapse, initTE } from "tw-elements";
-import PhoneInput from "react-phone-number-input";
+
 
 initTE({ Collapse });
 
@@ -569,13 +569,13 @@ function Faq() {
                       {/* Name input */}
                       <div className="flex flex-wrap">
                         <div
-                          className="relative mb-6 xs:mr-0 md:w-6/12 xs:w-full"
+                          className="relative mb-6 xs:mr-0 md:w-6/12 xs:w-full xxs:w-full"
                           data-te-input-wrapper-init
                         >
                           <div className="md:mr-2 xs:mr-0">
                             <input
                               type="text"
-                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white md:py-4 xs:py-3 px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white md:py-4 xs:py-3 py-4 px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                               id="firstName"
                               placeholder="First Name"
                             />
@@ -588,13 +588,13 @@ function Faq() {
                           </div>
                         </div>
                         <div
-                          className="relative mb-6 md:w-6/12 xs:w-full"
+                          className="relative mb-6 md:w-6/12 xs:w-full xxs:w-full"
                           data-te-input-wrapper-init
                         >
                           <div className="">
                             <input
                               type="text"
-                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white md:py-4 xs:py-3 px-3  leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white md:py-4 xs:py-3 py-4 px-3  leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                               id="lastName"
                               placeholder="Last Name"
                             />
@@ -611,13 +611,13 @@ function Faq() {
                       <div className="flex flex-wrap">
                         {/* phone input */}
                         <div
-                          className="relative mb-6 md:w-6/12 xs:w-full"
+                          className="relative mb-6 md:w-6/12 xs:w-full xxs:w-full"
                           data-te-input-wrapper-init
                         >
                           <div className="md:mr-2 xs:mr-0">
                             <input
                               type="tel"
-                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white md:py-4 xs:py-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              className="peer block min-h-[auto] w-full rounded-lg border-0 bg-white  md:py-4 xs:py-3 py-4 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                               id="phoneNumber"
                               placeholder="Enter your phonenumber"
                             />
@@ -631,7 +631,7 @@ function Faq() {
                         </div>
                         {/* Email input */}
                         <div
-                          className="relative mb-6 md:w-6/12 xs:w-full"
+                          className="relative mb-6 md:w-6/12 xs:w-full xxs:w-full"
                           data-te-input-wrapper-init
                         >
                           <div className="">
@@ -687,7 +687,7 @@ function Faq() {
         <div className="container mx-auto">
           <div className="flex flex-wrap mx-auto">
             <div className="md:w-1/2 xs:w-full">
-              <div className="md:text-center xs:text-center text-black px-6 md:px-12 md:mb-20 xs:mb-8 mt-10">
+              <div className="md:text-center xs:text-center xxs:text-center text-black px-6 md:px-8 md:mb-20 xs:mb-8 mt-10">
                 <h2 className="md:text-center xs:text-center font-bold xs:text-3xl lg:text-7xl md:mb-8 xs:mb-3">
                   Make
                   <span className="bg-[#eefcf3] text-green-700 rounded-lg leading-normal ml-2 px-2">
@@ -702,7 +702,7 @@ function Faq() {
               </div>
             </div>
             <div className="md:w-1/2 xs:w-full xs:mb-20">
-              <div className=" justify-center flex flex-wrap md:pt-28 xs:pt-0">
+              <div className=" justify-center flex flex-wrap md:pt-28 xs:pt-0 md:px-4 pt-10">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.moohub.safenaija"
                   className="pr-2"
@@ -711,7 +711,7 @@ function Faq() {
                     src="../media/Buttons (3).png"
                     alt="playstore"
                     srcSet=""
-                    className="lg:h-24 xs:h-14"
+                    className=" xl:h-24 lg:h-20 xs:h-12 h-10"
                   />
                 </a>
                 <a href="" className="pl-2">
@@ -719,7 +719,7 @@ function Faq() {
                     src="../media/Buttons (2).png"
                     alt="applestore"
                     srcSet=""
-                    className="lg:h-24 xs:h-14"
+                    className=" xl:h-24 lg:h-20 xs:h-12 h-10"
                   />
                 </a>
               </div>
