@@ -97,7 +97,7 @@ const Home = () => {
           </h3>
           <div className=" flex mx-auto justify-center">
             <ol className="text-lg sn-list md:text-left xs:text-center">
-              <li className="py-5 sn-list" >
+              <li className="py-5 sn-list">
                 See incidents unfold and get the real story from people on the
                 scene.
               </li>
@@ -229,11 +229,15 @@ const Home = () => {
             </div>
           </div>
           <div className=" xl:w-4/12 w-12/12 sm:w-5/12 px-14 xs:hidden sm:block">
-            <img src="../media/blue.png" className="w-72 md:mt-20 lg:mt-4" alt="phoneImage" />
+            <img
+              src="../media/blue.png"
+              className="w-72 md:mt-20 lg:mt-4"
+              alt="phoneImage"
+            />
           </div>
         </div>
       </section>
-      
+
       {/* Pre-footer section*/}
       <div className="w-full bottom-0 right-0 left-0  z-10 bg-black text-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container mx-auto">
@@ -246,17 +250,17 @@ const Home = () => {
               Click on the your device icons below and download for free.
             </p>
             <div className="flex flex-wrap mx-auto  justify-center">
-            <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
+              <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
                 <img src="./media/play2.png" alt="" className="sn-btn1" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src="./media/applestore.png" alt="" className="sn-btn2" />
               </a>
-                </div>
+            </div>
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
     </>
   );
 };

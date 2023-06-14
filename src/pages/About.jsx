@@ -95,10 +95,10 @@ function About() {
               Click on the your device icons below and download for free.
             </p>
             <div className="flex flex-wrap mx-auto  justify-center">
-            <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
+              <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
                 <img src="./media/play2.png" alt="" className="sn-btn1" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src="./media/applestore.png" alt="" className="sn-btn2" />
               </a>
             </div>

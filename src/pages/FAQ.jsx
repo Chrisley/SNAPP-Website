@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../App.css";
 import { Collapse, initTE } from "tw-elements";
 
-
 initTE({ Collapse });
 
 function Faq() {
@@ -665,7 +664,6 @@ function Faq() {
                         >
                           Message
                         </label>
-
                       </div>
 
                       {/* Submit button */}
@@ -714,7 +712,7 @@ function Faq() {
                     className=" xl:h-24 lg:h-20 xs:h-12 h-10"
                   />
                 </a>
-                <a href="" className="pl-2">
+                <a href="#" className="pl-2">
                   <img
                     src="../media/Buttons (2).png"
                     alt="applestore"

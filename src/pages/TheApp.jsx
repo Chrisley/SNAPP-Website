@@ -31,7 +31,7 @@ function TheApp() {
               <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
                 <img src="./media/play2.png" alt="" className="sn-btn1" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src="./media/applestore.png" alt="" className="sn-btn2" />
               </a>
             </div>
@@ -227,8 +227,10 @@ function TheApp() {
               </h2>
               {activeTab === 1 && (
                 <div className="px-5 py-4">
-                  SafeNaija is a mobile security emergency application that offers real-time security
-                   and safety to its users using technology-assisted traditional means of emergency management and escalation to local authorities.
+                  SafeNaija is a mobile security emergency application that
+                  offers real-time security and safety to its users using
+                  technology-assisted traditional means of emergency management
+                  and escalation to local authorities.
                 </div>
               )}
             </div>
@@ -267,10 +269,12 @@ function TheApp() {
               </h2>
               {activeTab === 2 && (
                 <div className="px-5 py-4">
-                  SafeNaija allows users to add inner circle members who then 
-                  receive alerts in emergencies. Reports from other users provide 
-                  news updates and safety tips. But it should be noted that SafeNaija is only supplies users with notifications and alerts, and is not directly responsible for user safety, 
-                  but promptly informs authorities to enhance response times.
+                  SafeNaija allows users to add inner circle members who then
+                  receive alerts in emergencies. Reports from other users
+                  provide news updates and safety tips. But it should be noted
+                  that SafeNaija is only supplies users with notifications and
+                  alerts, and is not directly responsible for user safety, but
+                  promptly informs authorities to enhance response times.
                 </div>
               )}
             </div>
@@ -288,7 +292,7 @@ function TheApp() {
                     dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
                   type="button"
                 >
-                 What is SafeNaija’s approach to safety?
+                  What is SafeNaija’s approach to safety?
                   <span className="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -309,10 +313,11 @@ function TheApp() {
               </h2>
               {activeTab === 3 && (
                 <div className="px-5 py-4">
-                  SafeNaija uses advanced location tracking technology to communicate 
-                  the emergency location and sends SMS alerts to the user's inner circle,
-                   even if they don't have the app installed. Depending on the severity, 
-                  SafeNaija notifies relevant agencies to handle the situation effectively.
+                  SafeNaija uses advanced location tracking technology to
+                  communicate the emergency location and sends SMS alerts to the
+                  user's inner circle, even if they don't have the app
+                  installed. Depending on the severity, SafeNaija notifies
+                  relevant agencies to handle the situation effectively.
                 </div>
               )}
             </div>
@@ -350,15 +355,16 @@ function TheApp() {
               </h2>
               {activeTab === 4 && (
                 <div className="px-5 py-4">
-                 SafeNaija follows government rules by working with legal experts to 
-                 protect user privacy and comply with data protection and emergency
-                  management laws. They collaborate with local authorities and services,
-                   keeping up with regulations and providing clear information through policies, 
-                 terms, and certifications to show their commitment to compliance.
+                  SafeNaija follows government rules by working with legal
+                  experts to protect user privacy and comply with data
+                  protection and emergency management laws. They collaborate
+                  with local authorities and services, keeping up with
+                  regulations and providing clear information through policies,
+                  terms, and certifications to show their commitment to
+                  compliance.
                 </div>
               )}
             </div>
-          
           </div>
         </div>
       </section>
@@ -375,13 +381,16 @@ function TheApp() {
                 Click on the your device icons below and download for free.
               </p>
               <div className="flex flex-wrap mx-auto  justify-center">
-                
-              <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
-                <img src="./media/play2.png" alt="" className="sn-btn1" />
-              </a>
-              <a href="">
-                <img src="./media/applestore.png" alt="" className="sn-btn2" />
-              </a>
+                <a href="https://play.google.com/store/apps/details?id=com.moohub.safenaija">
+                  <img src="./media/play2.png" alt="" className="sn-btn1" />
+                </a>
+                <a href="#">
+                  <img
+                    src="./media/applestore.png"
+                    alt=""
+                    className="sn-btn2"
+                  />
+                </a>
               </div>
             </div>
           </div>
