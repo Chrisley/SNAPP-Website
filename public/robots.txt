@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+
+ <ul>
+                <li>
+               
+                </li>
+                
+
+                <li className='text-body-color hover:text-success mb-2 inline-block text-base'>
+               
+                </li>
+            </ul>
+           

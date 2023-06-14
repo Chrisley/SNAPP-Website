@@ -1,0 +1,159 @@
+nav .nav {
+  display: flex;
+}
+
+.nav-brand img {
+  width: 140px;
+  padding-top: 5px;
+}
+.menu-trigger {
+  display: none;
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav a:link {
+  text-decoration: none;
+}
+
+.nav-menu li {
+  padding: 0 20px;
+}
+.nav-menu a {
+  color: #1d1f1e;
+}
+
+.nav-menu2 a {
+  color: #000;
+}
+
+.nav-menu2 li {
+  padding: 0 10px;
+}
+nav .btn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  background: black;
+}
+.toggle-skin {
+  display: none;
+}
+.toggle-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 15px 30px;
+  }
+
+  nav .nav {
+    display: flexbox;
+  }
+  .nav ul {
+    display: none;
+  }
+  .menu-trigger {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 10px auto;
+    padding-top: 5px;
+    width: 100%;
+  }
+  .icon-box {
+    float: right;
+  }
+  .icon {
+    height: 25px;
+  }
+  .search-icon {
+    margin-right: 30px;
+    height: 22px;
+  }
+  .toggle-skin {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(63, 61, 65);
+    opacity: 0.7;
+    visibility: hidden;
+  }
+  .toggle-menu {
+    background: #e6e6e6;
+    color: #000;
+    padding: 20px;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20;
+    width: 91%;
+    opacity: 1;
+    visibility: hidden;
+  }
+  .toggle-menu ul {
+    list-style: none;
+    align-items: center;
+  }
+  .toggle-menu li {
+    padding: 12px;
+  }
+  .toggle-menu a:link {
+    text-decoration: none;
+  }
+  .toggle-brand {
+    margin: 30px;
+  }
+  .toggle-brand img {
+    width: 130px;
+  }
+  .toggle-icon {
+    height: 30px;
+    padding-top: 5px;
+    float: right;
+  }
+
+  .responsive-nav {
+    display: block;
+    visibility: visible;
+    transition: ease-in 10s;
+    transition-duration: 10s;
+    z-index: 20;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-brand img {
+    width: 120px;
+    padding-top: 5px;
+  }
+  nav {
+    padding: 15px 20px;
+  }
+  .menu-trigger {
+    padding-top: 0px;
+  }
+
+  .icon {
+    height: 20px;
+  }
+
+  .search-icon {
+    margin-right: 20px;
+    height: 17px;
+  }
+}
+
+/* Shortcuts*/

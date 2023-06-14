@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*The General Hero section*/
+.sn-hero {
+  background: url("../public/media/Rectangle 41 (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 584px;
+  width: 100%;
+}
+.sn-hero1 {
+  background: url("../public/media/about/Group\ 468.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 584px;
+  width: 100%;
+}
+.sn-hero2 {
+  background: url("../public/media/Rectangle 41 (3).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+}
+.contact-hero {
+  background: url("../public/media/Rectangle 41 (2).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 422px;
+  width: 100%;
+}
+txt-blue {
+  color: blue;
+}
+txt-green {
+  color: green;
+}
+.hero-txt {
+  margin-top: 40px;
+  vertical-align: middle;
+}
+
+/* General List Design*/
+.sn-list {
+  list-style: url('../public/media/Rectangle52.svg');
+  list-style-position: outside;
+}
+
+/* Home slider section */
+.slide-item {
+  flex: 1;
+  transition: flex 0.8s;
+  height: 562px;
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+}
+.slide-dummy {
+  margin-bottom: 10px;
+}
+.slide1 {
+  background: url(../public/media/slide1.png );
+}
+.slide1:hover {
+  flex: 4;
+}
+.slide2 {
+  background: url(../public/media/slide2.png);
+  background-repeat: none;
+  background-size: cover;
+}
+.slide2:hover {
+  flex: 4;
+}
+.slide3 {
+  background: url(../public/media/slide3.png);
+  background-repeat: none;
+  background-size: cover;
+}
+.slide3:hover {
+  flex: 4;
+}
+.slide4 {
+  background: url(../public/media/slide4.png);
+  background-repeat: none;
+  background-size: cover;
+}
+.slide4:hover {
+  flex: 4;
+}
+.sn-prefooter {
+  background: url(../public/media/app/background.png);
+  background-repeat: no-repeat;
+}
+.faq-prefooter {
+  background: url(../public/media/FAQ.png);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 2715px) {
+  .side-img {
+    position: absolute;
+    z-index: 0;
+    margin-top: -50px;
+    width: 35%;
+    right: 0;
+    margin-bottom: 50px;
+  }
+  .sn-btn1{ height:80px; padding-right: 10px;}
+.sn-btn2{ height: 82px; margin-left: 10px;}
+}
+.sn-prefooter {
+  background-size: cover;
+  background-position:center;
+  height: 425px;
+  width: 100%;
+}
+
+.faq-prefooter {
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+}
+
+
+@media (max-width: 1600px) {
+  .side-img {
+    position: absolute;
+    padding-left: 10px;
+    z-index: 0;
+    margin-top: -50px;
+    width: 40%;
+    right: 0;
+    margin-bottom: 50px;
+  }
+  .sn-btn1{ height:80px; padding-right: 10px;}
+.sn-btn2{ height: 82px; margin-left: 10px;}
+}
+@media (max-width: 1024px) {
+  .side-img {
+    position: absolute;
+    padding-left: 20px;
+    z-index: 0;
+    margin-top: -50px;
+    width: 48%;
+    right: 0;
+    margin-bottom: 50px;
+  }
+  .sn-btn1{ height:60px; padding-right: 10px;}
+  .sn-btn2{ height: 62px; margin-left: 10px;}
+}
+@media (max-width: 768px) {
+  .side-img {
+    position: absolute;
+    padding-left: 20px;
+    z-index: 0;
+    margin-top: -50px;
+    width: 47%;
+    right: 0;
+    margin-bottom: 50px;
+  }
+  .sn-btn1{ height:40px; padding-right: 3px;}
+.sn-btn2{ height: 42px; margin-left: 3px;}
+
+.sn-prefooter{
+  background-size:  cover;
+  background-position: left bottom ;
+  height: 300px;
+  width: 100%;
+  padding-top: 40px;
+}
+.faq-prefooter {
+  background-size:  cover;
+  background-position: left bottom ;
+  width: 100%;
+  padding-top: 40px;
+}
+}
+#loadmore{
+  display: none;
+}
+
+/* enhanced feature section */
+.sn-Fcard {
+  border-left: 25px solid;
+  border-radius: 25px;
+}
+.bside-rose {
+  border-color: #f0245a;
+}
+.bside-blue {
+  border-color: #23a6f0;
+}
+.bside-orange {
+  border-color: #ff7b00;
+}
+.bside-purple {
+  border-color: #aa6992;
+}
+/*prefooter section*/
