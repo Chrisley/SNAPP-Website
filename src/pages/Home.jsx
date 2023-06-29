@@ -1,7 +1,14 @@
 import "../App.css";
+import React, { useEffect } from "react";
 import Carousel from "../component/Carousel/Carousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
     <>
       <Carousel />
@@ -19,7 +26,7 @@ const Home = () => {
     </div>*/}
 
       {/*Feature section*/}
-      <section className="mb-32 mt-20 text-gray-800 text-center">
+      <section className="mb-32 mt-20 text-gray-800 text-center" data-aos="fade-up">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 lg:gap-x-12">
             <div className="mb-12 md:mb-0 px-4">
@@ -60,7 +67,7 @@ const Home = () => {
 
       {/* slider section */}
       <section>
-        <div className="container mx-auto flex flex-wrap mb-20 xs:hidden  lg:flex">
+        <div className="container mx-auto flex flex-wrap mb-20 xs:hidden  lg:flex" data-aos="flip-up">
           <div className="slide-item slide1"></div>
           <div className="slide-item slide2"></div>
           <div className="slide-item slide3"></div>
@@ -90,7 +97,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className=" container align-center mx-auto mb-10 px-5">
+        <div className=" container align-center mx-auto mb-10 px-5" data-aos="zoom-in">
           <h3 className="text-center text-2xl font-bold pb-10">
             {" "}
             More With SafeNaija{" "}
@@ -114,7 +121,7 @@ const Home = () => {
         </div>
 
         <div className="container flex flex-wrap mb-20 mx-auto pl-5 xs:pl-0 lg:px-10 sm:px-10">
-          <div className="xl:w-1/2 lg:w-1/2 md:w1/2 w-2/2 py-20 pl-10 xs:pl-0 xs:py-10 xs:px-2 sm:pr-5 xs:pr-0 mx-auto">
+          <div className="xl:w-1/2 lg:w-1/2 md:w1/2 w-2/2 py-20 pl-10 xs:pl-0 xs:py-10 xs:px-2 sm:pr-5 xs:pr-0 mx-auto" data-aos="zoom-in-right">
             <p className="xl:text-left md:text-left lg:text-left sm:text-left xs:text-center">
               Our Vision
             </p>
@@ -123,7 +130,7 @@ const Home = () => {
               safer one
             </h2>
           </div>
-          <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-2/2  mb-20 pr-5 xs:px-2 xs:text-justify sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left ">
+          <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-2/2  mb-20 pr-5 xs:px-2 xs:text-justify sm:text-sm xs:text-sm xl:text-lg lg:text-lg text-left"  data-aos="zoom-in-left">
             <p>
               Allow users to report environmental hazards such as oil spills,
               <br />
@@ -157,7 +164,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="xs:w-12/12 sm:w-5/12 md:w-7/12  lg:w-7/12 xl:w-7/12   px-5 xs:px-0 ">
+          <div className="xs:w-12/12 sm:w-5/12 md:w-7/12  lg:w-7/12 xl:w-7/12 px-5 xs:px-0 "  data-aos="zoom-in-right">
             <h2 className="text-4xl font-semibold lg:pl-8 xs:text-xl xs:text-center">
               Protecting you through reports.
             </h2>
@@ -228,7 +235,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className=" xl:w-4/12 w-12/12 sm:w-5/12 px-14 xs:hidden sm:block">
+          <div className=" xl:w-4/12 w-12/12 sm:w-5/12 px-14 xs:hidden sm:block"  data-aos="zoom-in-left">
             <img
               src="../media/blue.png"
               className="w-72 md:mt-20 lg:mt-4"

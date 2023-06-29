@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import "../App.css";
 import { Collapse, initTE } from "tw-elements";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 initTE({ Collapse });
 
@@ -10,6 +12,10 @@ function TheApp() {
   const toggleAccordion = (tab) => {
     setActiveTab(tab === activeTab ? null : tab);
   };
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
 
   return (
     <>
@@ -46,10 +52,10 @@ function TheApp() {
             <img
               src="../media/app/phone 2.png"
               alt=""
-              className="lg:w-60 xs:w-40 mx-auto"
+              className="lg:w-60 xs:w-40 mx-auto" data-aos="fade-up-right"
             />
           </div>
-          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left lg:my-24 md:my-10 xs:pt-4">
+          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg text-left lg:my-24 md:my-10 xs:pt-4" data-aos="fade-up-left">
             <h4 className="text-green-500 font-bold text-xl xl:text-2xl pb-5">
               Check the safety status of your emergency contact
             </h4>
@@ -77,10 +83,10 @@ function TheApp() {
             <img
               src="../media/app/phone 1.png"
               alt=""
-              className="lg:w-60 xs:w-40 mx-auto"
+              className="lg:w-60 xs:w-40 mx-auto" data-aos="fade-up-right"
             />
           </div>
-          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left lg:my-24 md:my-10 xs:pt-4">
+          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left lg:my-24 md:my-10 xs:pt-4" data-aos="fade-up-left">
             <h4 className="text-blue-500 font-bold text-xl xl:text-2xl pb-5">
               Set your status and report incidents for others to see
             </h4>
@@ -106,10 +112,10 @@ function TheApp() {
             <img
               src="../media/app/phone 3.png"
               alt=""
-              className="lg:w-60 xs:w-40 mx-auto"
+              className="lg:w-60 xs:w-40 mx-auto" data-aos="fade-up-right"
             />
           </div>
-          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left lg:my-24 md:my-10 xs:pt-4">
+          <div className=" xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-2/3 xs:w-full  mb-20 pr-5 xs:px-2 md:text-justify xs:text-center sm:text-sm xs:text-sm xl:text-lg lg:text-lg   text-left lg:my-24 md:my-10 xs:pt-4" data-aos="fade-up-left">
             <h4 className="text-red-500 font-bold text-xl xl:text-2xl pb-5">
               See reports made at different locations and around
             </h4>
@@ -136,7 +142,7 @@ function TheApp() {
         </h3>
         <div className=" flex flex-wrap mb-20 mx-auto lg:container sm:w-full xs:w-full">
           <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-2/2 w-full xs:pl-0 xs:py-10 xs:px-2 xs:pr-0">
-            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-5 bside-rose">
+            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-5 bside-rose" data-aos="fade-down-right">
               <h4 className="font-semibold text-center pb-2">
                 Emergency Calls
               </h4>
@@ -149,7 +155,7 @@ function TheApp() {
           </div>
 
           <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-2/2 w-full xs:pl-0 xs:py-10 xs:px-2 xs:pr-0">
-            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-blue">
+            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-blue" data-aos="fade-down-left">
               <h4 className="font-semibold text-center">Navigations</h4>
               <p className="text-xs">
                 As you navigate, you can view reports on the map and stay
@@ -158,7 +164,7 @@ function TheApp() {
             </div>
           </div>
           <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-2/2 w-full xs:pl-0 xs:py-10 xs:px-2 xs:pr-0">
-            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-orange">
+            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-orange" data-aos="fade-down-right">
               <h4 className="font-semibold text-center">Video Incidents</h4>
               <p className="text-xs">
                 If an incident is taking place in your vicinity, you can capture
@@ -169,7 +175,7 @@ function TheApp() {
           </div>
 
           <div className=" xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-2/2 w-full xs:pl-0 xs:py-10 xs:px-2 xs:pr-0">
-            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-purple">
+            <div className="bg-gray-200 sn-Fcard mx-5 px-5 pt-5 pb-10 bside-purple" data-aos="fade-down-left">
               <h4 className="font-semibold text-center">Security Tips</h4>
               <p className="text-xs">
                 Discover tips to enhance your security and stay safe in various
@@ -183,7 +189,7 @@ function TheApp() {
       <section>
         {/* Faq section */}
         <div className="container sn-faq  mb-20 mx-auto px-5">
-          <div className=" mx-auto text-center mt-20 mb-10">
+          <div className=" mx-auto text-center mt-20 mb-10" data-aos="fade-down">
             <h2 className="font-bold xl:text-3xl xs:text-2xl pb-4">
               Information Hub
             </h2>
@@ -192,7 +198,7 @@ function TheApp() {
             </p>
           </div>
 
-          <div id="accordionExample">
+          <div id="accordionExample" data-aos="fade-down">
             <div
               className="rounded-lg mb-4 border border-neutral-300 bg-white dark:border-neutral-600 dark:bg-neutral-800"
               onClick={() => toggleAccordion(1)}
@@ -370,7 +376,7 @@ function TheApp() {
       </section>
       {/* Pre-footer section*/}
       <section id="download">
-        <div className="w-full text-black xs:pt-10 xs:pb-10 lg:pt-[120px] lg:pb-20">
+        <div className="w-full text-black xs:pt-10 xs:pb-10 lg:pt-[120px] lg:pb-20" data-aos="fade-down">
           <div className="container mx-auto sn-prefooter md:pt-24 xs:pt-2">
             <div className=" item-center justify-center lg:mx-20 md:mx-10 xs:mx-2">
               <h2 className="text-center font-bold md:text-2xl lg:text-3xl xs:text-lg leading-4 mb-2 ">
