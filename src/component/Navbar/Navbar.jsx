@@ -19,7 +19,7 @@ function Navbar() {
       <nav>
         <div className="nav container mx-auto xl:py-6 md:py-6  xs:py-0 ">
           <div className="nav-brand">
-            <a href="App">
+            <a href="/">
               <img src=".././media/navlogo2.png" alt="safenaija" />
             </a>
           </div>
@@ -69,7 +69,7 @@ function Navbar() {
       <div className="toggle-menu" ref={navRef}>
         <div className="toggle-brand flex flex-wrap ">
           <div className="w-1/2">
-            <a href="App">
+            <a href="/">
               <img src="././media/navlogo2.png" alt="safenaija" />
             </a>
           </div>
